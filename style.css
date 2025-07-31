@@ -1,0 +1,148 @@
+:root{
+    --primary-color: #6BCDFA;
+    --secondary-color: #ffffff;
+}
+
+.hero_section{
+    background-image: url('imgs/hero-background.png');
+    background-size: cover;
+    height: 500px;
+}
+
+.cont-nav{
+    z-index: 2;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: var(--secondary-color);
+}
+
+.logo-nav {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+
+.cont-nav{
+    background: rgba(171, 169, 169, 0.3) !important;
+    backdrop-filter: blur(4px) !important;
+    padding: 10px 40px;
+    margin-top: 140px;
+    justify-self: anchor-center;
+    border-radius: 20px;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.short_description .title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 60px;
+}
+
+.short_description .description{
+    font-size: 16px;
+    margin-top: 20px;
+    justify-self: center;
+}
+
+.weather_type_container{
+    margin-top: 50px;
+}
+
+.crad{
+    border-radius: 20px;
+    height: 300px;
+    background-color: var(--primary-color);
+    width: 70%;
+    height: 300px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.weather_type_col{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card_title{
+    color: var(--secondary-color);
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.card-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+}
+
+.user-location img{
+    object-fit: contain;
+    height: 150px;
+}
+
+.title.text-center{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.weather_cards_section{
+    background-color: var(--primary-color);
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.weather_cards{
+    border-radius: 20px;
+    height: 300px;
+    background-color: var(--secondary-color);
+    width: 70%;
+    height: 300px !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.copyright{
+    font-size: 15px;
+}
+
+.icon{
+    height: 180px;
+    object-fit: contain;
+}
+
+.city_name{
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.temp{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px){
+    .cont-nav{
+        margin-top: auto;
+        padding: 10px 10px;
+        width: 90%;
+        top: 40px;
+    }
+
+    .hero_section{
+        height: 300px;
+    }
+
+    .weather_type_col{
+        margin-top: 30px;
+    }
+}

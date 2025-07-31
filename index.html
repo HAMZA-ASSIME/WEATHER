@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIT RADIO WEATHER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero_section">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container cont-nav position-fixed top">
+                <a class="navbar-brand" href="#"><img src="imgs/logo.png" class="logo-nav"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <section class="weather_type_section">
+        <div class="container">
+            <div class="short_description">
+                <div class="title text-center">HIT RADIO MÉTÉO</div>
+                <div class="description text-center w-75">
+                    HIT RADIO, votre chaîne de radio préférée, lance une nouvelle section dédiée à la météo !
+                    Ce service vous permet d'afficher les prévisions météo <strong>soit en utilisant votre localisation actuelle</strong>,
+                    <strong>soit en recherchant une ville</strong> de votre choix.
+                </div>
+            </div>
+        </div>
+
+        <div class="container weather_type_container">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 weather_type_col">
+                    <div class="cities crad position-relative">
+                        <div class="card_title text-center">PAR VILLE</div>
+                        <img src="imgs/city-removebg-preview.png" class="card-img">
+                    </div>
+                </div>
+                <div class="col-md-4 weather_type_col">
+                    <div class="user-location crad position-relative">
+                        <div class="card_title px-md-3 text-center">PAR LOCALISATION</div>
+                        <img src="imgs/localisation-removebg-preview.png" class="card-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather_cards_section pb-5">
+        <div class="container">
+            <div class="title text-center text-white">Prévisions Météo</div>
+            <div class="row justify-content-evenly mt-md-3 pt-3">
+                <div class="col-md-4 weather_type_col justify-content-md-end">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="user-location-weather">
+                        <img src="" alt="" class="icon">
+                        <div class="city_name"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 weather_type_col">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="tanger">
+                        <img src="" alt="" class="icon">
+                        <div class="city_name"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 weather_type_col justify-content-md-start">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="rabat">
+                        <img src="" alt="" class="icon">
+                        <div class="city_name"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 weather_type_col mt-md-5 justify-content-md-end">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="marrakech">
+                        <img src="" alt="" class="icon">
+                        <div class="city_name"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 weather_type_col mt-md-5 justify-content-md-start">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="settat">
+                        <img src="" alt="" class="icon">
+                        <div class="city_name"></div>
+                        <div class="temp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-center py-2">
+        <div class="container">
+            <p class="mb-0 copyright"><span style="font-weight: bold;">© 2025 HIT RADIO</span> - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="home-page-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
