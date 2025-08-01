@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +11,19 @@
     <section class="hero_section">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container cont-nav position-fixed top">
-                <a class="navbar-brand" href="#"><img src="imgs/logo.png" class="logo-nav"></a>
+                <a class="navbar-brand" href="https://www.hitradio.ma/"><img src="imgs/logo.png" class="logo-nav"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item toggle_nav">
+                            <button class="mode-toggle-btn" onclick="toggleMode()">
+                                <div class="slider-circle"></div>
+                            </button>
                         </li>
                 </div>
             </div>
@@ -54,11 +45,31 @@
         <div class="container weather_type_container">
             <div class="row justify-content-evenly">
                 <div class="col-md-4 weather_type_col">
-                    <div class="cities crad position-relative">
+                    <div class="cities crad position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="card_title text-center">PAR VILLE</div>
                         <img src="imgs/city-removebg-preview.png" class="card-img">
                     </div>
                 </div>
+
+<!--------------------     Modal     ---------------------------->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                            <input type="text" placeholder="Tapez votre ville" class="form-control input-text" id="city_value" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-submit">Chercher</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 weather_type_col">
                     <div class="user-location crad position-relative">
                         <div class="card_title px-md-3 text-center">PAR LOCALISATION</div>
@@ -74,7 +85,7 @@
             <div class="title text-center text-white">Prévisions Météo</div>
             <div class="row justify-content-evenly mt-md-3 pt-3">
                 <div class="col-md-4 weather_type_col justify-content-md-end">
-                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="user-location-weather">
+                    <div class="weather_cards px-md-3 d-flex flex-column align-items-center" id="casablanca">
                         <img src="" alt="" class="icon">
                         <div class="city_name"></div>
                         <div class="temp"></div>
